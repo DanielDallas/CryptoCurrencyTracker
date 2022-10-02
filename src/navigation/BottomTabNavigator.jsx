@@ -21,7 +21,7 @@ const BottomTabNavigator = () => {
       }}
     >
       <Tab.Screen
-        name="Home"
+        name="Crypto Assets"
         component={HomeScreen}
         options={{
           tabBarIcon: ({ focused, color }) => (
@@ -29,17 +29,9 @@ const BottomTabNavigator = () => {
           ),
         }}
       />
+
       <Tab.Screen
-        name="Portfolio"
-        component={PortfolioScreen}
-        options={{
-          tabBarIcon: ({ focused, color }) => (
-            <Foundation name="graph-pie" size={focused ? 35 : 30} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Watchlist"
+        name="My Watchlist"
         component={WatchlistScreen}
         options={{
           tabBarIcon: ({ focused, color }) => (
